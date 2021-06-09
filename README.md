@@ -3,7 +3,7 @@
 Use `run.sh` to run the FDMine Framework. Before executing `run.sh` you have to change the path address in the `run.sh` file. You do not have to do anything else!
 
 ### Dataset Description
- The FDMine need 3 datasets (in .CSV formate) to execute. They are `Drug_SSP.csv`, `Food_SSP.csv`, and `food_contribution.csv`. The samle for the dataset are given below
+ The FDMine need 3 datasets (in .CSV formate) to execute. They are `Drug_SSP.csv`, `Food_SSP.csv`, and `food_contribution.csv`. The structure of the dataset are given below
  
  ### Drug_SSP.csv
 
