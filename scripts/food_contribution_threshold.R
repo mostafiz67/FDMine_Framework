@@ -1,7 +1,6 @@
 # Calculating New similarity using multiplication and matching
 
 library(dplyr)
-library(stringr)
 
 
 # ----------------------------- This Part is for taking Contribution threashhold of the food compound -----------------------------------------------------------
@@ -24,7 +23,7 @@ df_2$new_ssp <- o
 # Removing rows based on the new_similarity (0.1)
 food_contribution <- as.double(args) 
 df_remove <- df_2
-df_remove<-df_remove[!(df_remove$new_ssp < food_contribution),] # YOU HAVE TO CHANGE THE VALUE (0.1) BASED ON YOUR PREFERENCE
+df_remove<-df_remove[!(df_remove$new_ssp < food_contribution),]
 df_remove$similarity <- NULL
 
 # Saving for further use
