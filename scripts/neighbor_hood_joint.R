@@ -75,6 +75,7 @@ Calculation_Information_function <- function(nb_methods)
   # The dataset path link
   all_data_ddi_fdi_ffi_info_sp_algo <- read.csv(file = paste0("output/new_link_prediction_NB_", nb_method, 
                                                              "_dataset_2_joint", ".csv", sep=""))
+  all_data_ddi_fdi_ffi_info_sp_algo <- all_data_ddi_fdi_ffi_info_sp_algo %>% distinct(nodeA, nodeB, .keep_all = TRUE) # Taking Unique FDI Only
   #Removing DD and FF Interaction
   
   all_ddi <- all_data_ddi_fdi_ffi_info_sp_algo %>% 
