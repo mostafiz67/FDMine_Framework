@@ -8,6 +8,7 @@ import pandas as pd
 from pandas import DataFrame
 
 # python3 -m scripts.calculate_ssp (from FDMine_Docker)
+# A portion of code is inherited from https://stackoverflow.com/questions/51681659/how-to-use-rdkit-to-calculte-molecular-fingerprint-and-similarity-of-a-list-of-s?answertab=votes#tab-top
 
 def calculate_ssp():
   drug_data = pd.read_csv(os.path.join(os.path.join(os.getcwd(), "dataset"), "Drug_SSP.csv"), index_col=None)
