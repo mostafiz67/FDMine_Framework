@@ -53,6 +53,7 @@ shortest_path_final_model_l2 <- function(main_dataset_for_shortest_path_algo) {
   # Merging and collecting only matched pair from both file and saving as new link predictions
   
   output <- inner_join(mat_pivot_lon_1, mat_pivot_lon_2, by = c("nodeA", "nodeB"))
+  output <- distinct(output) # Taking only unique
   write.csv(output, "output/new_link_prediction_SP_L2_dataset_1_disjoint.csv", row.names = FALSE) 
   
   

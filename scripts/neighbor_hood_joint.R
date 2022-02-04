@@ -25,7 +25,7 @@ neighbor_final_output <- function(main_dataset_for_neighbor_algo) {
     )
   
   cn_edgelist <- cn_edgelist %>% arrange(desc(scr))
-  
+  cn_edgelist <- distinct(cn_edgelist)
   write.csv(cn_edgelist, "output/new_link_prediction_NB_CN_dataset_2_joint.csv", row.names = FALSE) 
   
   
@@ -36,6 +36,7 @@ neighbor_final_output <- function(main_dataset_for_neighbor_algo) {
     )
   
   aa_edgelist <- aa_edgelist %>% arrange(desc(scr))
+  aa_edgelist <- distinct(aa_edgelist)
   write.csv(aa_edgelist, "output/new_link_prediction_NB_AA_dataset_2_joint.csv", row.names = FALSE) 
   
   
@@ -46,6 +47,7 @@ neighbor_final_output <- function(main_dataset_for_neighbor_algo) {
     )
   
   l3_edgelist <- l3_edgelist %>% arrange(desc(scr))
+  l3_edgelist <- distinct(l3_edgelist)
   write.csv(l3_edgelist, "output/new_link_prediction_NB_L3_dataset_2_joint.csv", row.names = FALSE) 
   
   # Predicting new link using Dice
@@ -56,6 +58,7 @@ neighbor_final_output <- function(main_dataset_for_neighbor_algo) {
     )
   
   ra_edgelist <- ra_edgelist %>% arrange(desc(scr))
+  ra_edgelist <- distinct(ra_edgelist)
   write.csv(ra_edgelist, "output/new_link_prediction_NB_RA_dataset_2_joint.csv", row.names = FALSE) 
   
 }
