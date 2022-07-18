@@ -9,7 +9,7 @@ subnetworks comprising food-drug similarity, drug-drug similarity, and food-food
 
 [The framework of FDMine] (https://github.com/mostafiz67/FDMine_Framework/blob/master/figures/Figure_1.png)
 
-[Comparison of the precision@top over eight methods and two different graph networks] (https://github.com/mostafiz67/FDMine_Framework/blob/master/figures/Figure_1.png)
+[Comparison of the precision@top over eight methods and two different graph networks] (https://github.com/mostafiz67/FDMine_Framework/blob/master/figures/Figure_2.png)
 
 
 
