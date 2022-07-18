@@ -8,16 +8,17 @@ The potential number of interactions is 87,192 and 92,143 for disjoint and joint
 subnetworks comprising food-drug similarity, drug-drug similarity, and food-food similarity networks.  A unique part of the graph involves encoding the food composition as a set of nodes and calculating a content contribution score.  To predict new FDIs, we considered several link prediction algorithms and various performance metrics, including the precision@top (top 1%, 2%, and 5%) of the newly predicted links.  The shortest path-based method  has achieved a precision of 84%, 60% and 40% for the top 1%, 2% and 5% of FDIs identified, respectively. We validated  the top FDIs predicted using FDMine to demonstrate its applicability, and we relate therapeutic anti-inflammatory effects of food items  informed by FDIs. FDMine is publicly available to support clinicians and researchers.},
 
 
-<figure>
-  <img src="https://github.com/mostafiz67/FDMine_Framework/blob/master/figures/Figure_1.png" alt="The framework of FDMine" width="800" height="700">
-  <figcaption style="text-align:center"> The framework of FDMine </figcaption>
-</figure>
+
+<img src="https://github.com/mostafiz67/FDMine_Framework/blob/master/figures/Figure_1.png" alt="The framework of FDMine" width="800" height="700">
+<p align="center">
+    Figure: The framework of FDMine
+</p>
 
 
-<figure >
 <img src="https://github.com/mostafiz67/FDMine_Framework/blob/master/figures/Figure_2.png" alt="Comparison of the precision@top over eight methods and two different graph networks">
-<figcaption style="text-align:center">Comparison of the precision@top over eight methods and two different graph networks </figcaption>
-</figure>
+<p align="center">
+Figure: Comparison of the precision@top over eight methods and two different graph networks
+</p>
 
 
 
