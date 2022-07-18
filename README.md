@@ -1,5 +1,19 @@
 # FDMine_Framework
 
+# Abstract
+Food-drug interactions (FDIs) arise when nutritional dietary consumption regulates biochemical mechanisms involved in drug metabolism. 
+This study proposes FDMine, a novel systematic framework that models the FDI problem as a homogenous graph. Our dataset consists of 788 unique approved 
+small molecule drugs with metabolism-related drug-drug interactions and 320 unique food items, composed of 563 unique compounds. 
+The potential number of interactions is 87,192 and 92,143 for disjoint and joint versions of the graph. We defined several similarity 
+subnetworks comprising food-drug similarity, drug-drug similarity, and food-food similarity networks.  A unique part of the graph involves encoding the food composition as a set of nodes and calculating a content contribution score.  To predict new FDIs, we considered several link prediction algorithms and various performance metrics, including the precision@top (top 1%, 2%, and 5%) of the newly predicted links.  The shortest path-based method  has achieved a precision of 84%, 60% and 40% for the top 1%, 2% and 5% of FDIs identified, respectively. We validated  the top FDIs predicted using FDMine to demonstrate its applicability, and we relate therapeutic anti-inflammatory effects of food items  informed by FDIs. FDMine is publicly available to support clinicians and researchers.},
+
+![The framework of FDMine] (figures/Figure_1.tiff)
+
+![Comparison of the precision@top over eight methods and two different graph networks] (figures/Figure_2.tiff)
+
+
+
+# Framework Execute
 Use `run.sh` to run the FDMine Framework. Before executing `run.sh` you have to change the path address in the `run.sh` file. You do not have to do anything else!
 
 ### Dataset Description
@@ -47,16 +61,6 @@ day={20},
 volume={12},
 number={1},
 pages={1061},
-abstract={Food-drug interactions (FDIs) arise when nutritional dietary consumption regulates biochemical mechanisms involved in drug metabolism. 
-This study proposes FDMine, a novel systematic framework that models the FDI problem as a homogenous graph. Our dataset consists of 788 unique approved 
-small molecule drugs with metabolism-related drug-drug interactions and 320 unique food items, composed of 563 unique compounds. 
-The potential number of interactions is 87,192 and 92,143 for disjoint and joint versions of the graph. We defined several similarity 
-subnetworks comprising food-drug similarity, drug-drug similarity, and food-food similarity networks. 
-A unique part of the graph involves encoding the food composition as a set of nodes and calculating a content contribution score. 
-To predict new FDIs, we considered several link prediction algorithms and various performance metrics, including the precision@top (top 1%, 2%, and 5%) of the newly predicted links. 
-The shortest path-based method  has achieved a precision of 84%, 60% and 40% for the top 1%, 2% and 5% of FDIs identified, respectively. 
-We validated  the top FDIs predicted using FDMine to demonstrate its applicability, and we relate therapeutic anti-inflammatory effects of food items 
-informed by FDIs. FDMine is publicly available to support clinicians and researchers.},
 issn={2045-2322},
 doi={10.1038/s41598-022-05132-y},
 url={https://doi.org/10.1038/s41598-022-05132-y}
