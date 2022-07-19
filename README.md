@@ -1,6 +1,6 @@
 # FDMine_Framework
 
-# Abstract
+# Objective & Result
 Food-drug interactions (FDIs) arise when nutritional dietary consumption regulates biochemical mechanisms involved in drug metabolism. 
 This study proposes FDMine, a novel systematic framework that models the FDI problem as a homogenous graph. Our dataset consists of 788 unique approved 
 small molecule drugs with metabolism-related drug-drug interactions and 320 unique food items, composed of 563 unique compounds. 
